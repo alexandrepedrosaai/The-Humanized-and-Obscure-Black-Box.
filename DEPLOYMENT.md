@@ -47,6 +47,8 @@ vercel
 3. Configure: Build Command = `pnpm run build`
 4. Deploy!
 
+**Note:** Vercel deployment is static-only (frontend). The `/health` endpoint will not be available.
+
 ### 5. Manual Deployment (Any Node.js host)
 
 ```bash

@@ -60,7 +60,7 @@ The `render.yaml` file is already configured with the correct build and start co
 
 ### Option 3: Vercel
 
-While this is a Node.js application, you can deploy the static build to Vercel:
+Deploy the static build to Vercel (frontend only, no backend server):
 
 ```bash
 # Install Vercel CLI
@@ -70,7 +70,7 @@ npm i -g vercel
 vercel
 ```
 
-The `vercel.json` file is already configured for deployment.
+The `vercel.json` file is already configured for static deployment. Note: The `/health` endpoint will not be available with this deployment method as it's static-only.
 
 ### Option 4: Railway
 

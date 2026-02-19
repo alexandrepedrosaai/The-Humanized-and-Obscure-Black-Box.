@@ -4,7 +4,6 @@
   "outputDirectory": "dist/public",
   "devCommand": "pnpm run dev",
   "installCommand": "pnpm install --frozen-lockfile",
-  "framework": null,
   "rewrites": [
     {
       "source": "/(.*)",
