@@ -93,6 +93,20 @@ Deploy to any Node.js hosting provider (Heroku, DigitalOcean, AWS, etc.):
 - `NODE_ENV` - Set to `production` for production builds (default: `development`)
 - `PORT` - Port to run the server on (default: `3000`)
 
+## 🏥 Health Check
+
+The application includes a health check endpoint for monitoring:
+
+```bash
+curl http://localhost:3000/health
+# Response: {"status":"ok","timestamp":"2026-02-19T06:05:02.035Z"}
+```
+
+This endpoint is useful for:
+- Container orchestration health checks
+- Load balancer health monitoring
+- Deployment verification
+
 ## 📋 Scripts
 
 - `pnpm dev` - Start development server with hot reload
